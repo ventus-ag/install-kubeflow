@@ -1,0 +1,16 @@
+name: 'Intall Kubeflow on Kubernetes'
+description: 'Intall Kubeflow on Kubernetes'
+author: 'TenSt'
+inputs:
+  config:
+    description: 'Config to Kubeflow config'
+    default: 'https://raw.githubusercontent.com/kubeflow/kubeflow/v0.6-branch/bootstrap/config/kfctl_existing_arrikto.0.6.2.yaml'
+  username:
+    description: 'Username for Kubeflow user'
+    default: ''
+  password:
+    description: 'Password for Kubeflow user'
+    default: ''
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
